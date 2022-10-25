@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Toutes les recettes</title>
+</head>
+
+<body>
+
+	<div>
+		<h1>Toutes les recettes</h1>
+	</div>
+
+	<ul>
+		<?php
+			$Recettes = array(
+  array('Titre' => 'Poulet frite','tag1' => 'plat','tag2' => 'viande','Temps' => '1h30','Cuisson' => '30min','Ingrédients' => 'poulet
+frites
+beurre','Recette' => 'faire tout cuire','Id' => '3'),
+  array('Titre' => 'Gateau au chocolat','tag1' => 'dessert','tag2' => '','Temps' => '30min','Cuisson' => '30min','Ingrédients' => 'lait
+sucre
+beurre
+farine
+chocolat
+leveure','Recette' => 'tout faire fondre, tout mélanger et mettre a cuire','Id' => '5')
+);?>
+
+		<?php foreach{$Titre as $Recettes => $value{
+			print_r($Titre);}?>
+			<li>
+				
+			</li>
+		<?php } ?>
+	</ul>
+
+</body>
+</html>

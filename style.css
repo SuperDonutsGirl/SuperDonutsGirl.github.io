@@ -1,0 +1,118 @@
+h1{
+	color: teal ;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-size: 100px;
+}
+
+h2{
+	color: teal ;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-size: 75px;
+}
+
+h3{
+	color: teal ;
+	text-align: left;
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+}
+
+h4{
+	color: grey ;
+	text-align: left;
+	text-indent: 10px;
+	font-size: 13px;
+}
+
+h5{
+	color: teal ;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+#header{
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+#suggestions{
+	list-style-type: none;
+	text-align: left;
+	font-size: 13px;
+	padding-left: 15px;
+}
+
+#bouton{
+	border: none;
+	color: teal;
+}
+
+.bordureSearch{
+	width: 180px;
+	padding-top: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	color: teal;
+	background: rgba(88, 99, 109, 0.1);
+}
+
+.bordureNone{
+	border: none;
+	background: rgba(88, 99, 109, 0.0);
+	color: teal;
+	font-family: 'Barlow', sans-serif;
+	font-size: 13px;
+}
+
+ul.list li{
+  display: inline-block;
+  list-style-type:none;
+  padding-right: 30px;
+
+}
+
+.barre{
+	height: 1px;
+	width: 85%;
+	border-top: 1px solid rgba(88, 99, 109, 0.3);
+	margin: auto;
+}
+
+#attributs{
+	color: teal;
+	text-align: center;
+	border-radius: 10px;
+	background: rgba(88, 99, 109, 0.1);
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+}
+#type{
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	padding-bottom: 25px;
+}
+
+#type a{
+	color: teal;
+	text-align: center;
+	font-size: 15px;
+}
+
+#type a:hover{
+	color: lightblue;
+}
+
+#footer{
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+	text-align: right;
+
+	color: lightgray;
+	padding: 25px;
+}

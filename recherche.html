@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<title>Les recettes de Mamie</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a6ba4900c1.js" crossorigin="anonymous"></script>
+	<script src="js/require.js"></script>
+</head>
+
+<body>
+	<div>
+		<h1>Les recettes de Mamie Mado</h1>
+	</div>
+
+	<div id="header" >
+		<p>Une recette bien précise ?</p>
+		<div class="bordureSearch">
+			<input class="bordureNone" type="search" id="input" placeholder="Rechercher"/>
+			<button class="fa-solid fa-magnifying-glass" id="bouton"></button>
+  			<ul id="suggestions"></ul>
+  			<script type="text/javascript" src="autoComplete.js"></script>
+  			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="barre_recherche.js"></script>
+
+	<div id="header">
+		<p>Aucune inspiration ?</p>
+		<div id="type">
+			<ul class="list">
+				<li><a style="text-decoration: none;" href="total.html" class="fa-solid fa-book"> Toutes les recettes</a></li>
+				<li><a style="text-decoration: none;" href="" class="fa-solid fa-lightbulb">  Recette aleatoire</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="header">
+		<p>Besoin d'une inspiration thématique ?</p>
+		<div id="type">
+			<ul class="list">
+				<li><a style="text-decoration: none; "href="" class="fa-solid fa-utensils"> Entrees</a></li>
+				<li><a style="text-decoration: none; "href="" class="fa-solid fa-utensils"> Plats</a></li>
+				<li><a style="text-decoration: none; "href="" class="fa-solid fa-utensils"> Desserts</a></li>
+				<li><a style="text-decoration: none; "href=" "class="fa-solid fa-seedling"> Vege</a></li>
+				<li><a style="text-decoration: none; "href=" "class="fa-solid fa-fish"> Poisson</a></li>
+				<li><a style="text-decoration: none; "href="#viande"class="fa-solid fa-drumstick-bite"> Viande</a></li>
+			</ul>
+	</div>
+	</div>
+
+
+	<div id="footer">
+		<p>© Pamartin</p>
+	</div>
+
+</body>
+
+</html>
