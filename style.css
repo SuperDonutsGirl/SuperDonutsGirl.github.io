@@ -55,6 +55,37 @@ p{
 	text-align: center;
 }
 
+.navbar{
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+.navbar a{
+	color: teal;
+}
+
+.navbar .logo{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.navbar .nav-links ul{
+	display: flex;
+}
+
+.navbar .nav-links ul li{
+	margin: 10px  ;
+}
+
+.navbar .nav-links ul li.active a{
+	font-weight: bolder;
+}
+
 #header{
 	text-align: center;
 	padding-top: 25px;
