@@ -4,6 +4,8 @@
   let ulField = document.getElementById('suggestions');
   inputField.addEventListener('input', changeAutoComplete);
   ulField.addEventListener('click', selectItem);
+  let bouton = document.getElementById('bouton');
+  bouton.addEventListener("click", managePage);
 
   function changeAutoComplete({ target }) {
     let data = target.value;
@@ -30,5 +32,9 @@
       inputField.value = target.textContent;
       ulField.innerHTML = ``;
     }
+  }
+
+  function managePage(){
+    let page = {value} + '.html';
   }
 })();

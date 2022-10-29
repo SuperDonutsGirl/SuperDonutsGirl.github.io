@@ -1,21 +1,24 @@
+*{
+	font-family: 'Barlow', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+}
+
 h1{
 	color: teal ;
 	text-align: center;
-	font-family: 'Barlow', sans-serif;
 	font-size: 100px;
 }
 
 h2{
 	color: teal ;
 	text-align: center;
-	font-family: 'Barlow', sans-serif;
 	font-size: 75px;
 }
 
 h3{
 	color: teal ;
 	text-align: left;
-	font-family: 'Barlow', sans-serif;
 	font-size: 15px;
 }
 
@@ -29,14 +32,31 @@ h4{
 h5{
 	color: teal ;
 	text-align: center;
-	font-family: 'Barlow', sans-serif;
 	font-size: 30px;
 	margin-bottom: 15px;
+	padding-top: 10 px;
+}
+
+h6{
+	color: rgb(36, 94, 94);
+	text-align: left;
+	font-size: medium;
+	padding-left: 10%;
+	margin-bottom: 10px;
+}
+
+p{
+	text-align: left;
+	padding-left: 5%;
+	margin-top: 0px;
+}
+
+.p_center{
+	text-align: center;
 }
 
 #header{
 	text-align: center;
-	font-family: 'Barlow', sans-serif;
 	padding-top: 25px;
 	padding-bottom: 50px;
 }
@@ -66,15 +86,12 @@ h5{
 	border: none;
 	background: rgba(88, 99, 109, 0.0);
 	color: teal;
-	font-family: 'Barlow', sans-serif;
 	font-size: 13px;
 }
 
 ul.list li{
   display: inline-block;
-  list-style-type:none;
   padding-right: 30px;
-
 }
 
 .barre{
@@ -82,6 +99,14 @@ ul.list li{
 	width: 85%;
 	border-top: 1px solid rgba(88, 99, 109, 0.3);
 	margin: auto;
+}
+
+.barre_ingredient{
+	height: 1px;
+	width: 85%;
+	border-top: 1px solid rgba(88, 99, 109, 0.3);
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #attributs{
@@ -92,9 +117,9 @@ ul.list li{
 	margin-bottom: 10px;
 	padding-bottom: 8px;
 }
+
 #type{
 	text-align: center;
-	font-family: 'Barlow', sans-serif;
 	padding-bottom: 25px;
 }
 
@@ -108,11 +133,26 @@ ul.list li{
 	color: lightblue;
 }
 
-#footer{
-	font-family: 'Barlow', sans-serif;
+.footer{
 	font-size: 15px;
 	text-align: right;
-
 	color: lightgray;
 	padding: 25px;
 }
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.item{
+	flex: 2;
+}
+
+.timer{
+	margin-top: 23px;
+	margin-left: 100px;
+	font-size: 30px;
+}
+
