@@ -277,6 +277,7 @@ ul.list li{
 }
 
 .visible {
+	font-size: 1.2em;
 	text-align: center;
 	border-color: teal;
 	border-radius: 10px;
