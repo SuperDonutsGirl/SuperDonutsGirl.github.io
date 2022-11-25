@@ -4,7 +4,12 @@
 	<title>Les recettes de Mamie</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&family=Cedarville+Cursive&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a6ba4900c1.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/type_writer.js"></script>
+
 </head>
 	
 <body>
@@ -25,17 +30,34 @@
 		<h1>Les recettes de Mamie Mado</h1>
 	</div>
 
-	<div>
-		<p class=presentation>
-		Presentation de mamie</p>
-	</div>
+	<img class="photo" src="photo.jpg" alt="papie et mamie">
 
-	<div>
-		<p id="footer">
-			Pour éviter que Papy soit jaloux, <br>le Petit Paki à été glissé <a href="petit_paki.html">ici</a>
-		</p>
+	<div class="bouton-lecture">
+		<button onclick="typeWriter()" class="visible" id="b0">Lire tout</button>
 	</div>
+	<div class="bouton-lecture">
+		<button onclick="typeWriter1()" class="visible" id="b1">Lire</button>
+	</div>
+	<p id="typing"></p>
 
+	<div class="bouton-lecture">
+		<button onclick="typeWriter2()" class="invisible" id="b2">Lire</button>
+	</div>
+	<p id="typing-2"></p>
+
+	<div class="bouton-lecture">
+		<button onclick="typeWriter3()" class="invisible" id="b3">Lire</button>
+	</div>
+	<p id="typing-3"></p>
+
+	<div class="bouton-lecture">
+		<button onclick="typeWriter4()" class="invisible" id="b4">Lire</button>
+	</div>
+	<p id="typing-4"></p>
+	<a id="paki_link" class="paki_invisible" href="petit_paki.html">ici</a>
+	
+
+	
 
 	<div >
 		<p class="footer">Fait avec <i class="fa-solid fa-heart fa-beat-fade"></i> <br> par Pamartin</p>
