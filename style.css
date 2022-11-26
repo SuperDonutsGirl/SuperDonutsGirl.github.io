@@ -4,10 +4,17 @@
 	text-decoration: none;
 }
 
+body{
+	margin: 0;
+}
+/*	---------------------------------------*/
+/*				CSS TITRES 				   */
+/*	---------------------------------------*/
 h1{
 	color: teal ;
 	text-align: center;
 	font-size: 100px;
+	margin: 1em;
 }
 
 h2{
@@ -48,6 +55,9 @@ h6{
 	padding-left: 10%;
 	margin-bottom: 10px;
 }
+/*	---------------------------------------*/
+
+
 
 p{
 	text-align: left;
@@ -60,53 +70,76 @@ a{
 	text-decoration: none;
 	color: teal;
 }
-
 .p_center{
 	text-align: center;
-}
-
-.navbar{
-	padding: 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	box-sizing: border-box;
-
 }
 
 #suggestions{
 	cursor: pointer;
 }
 
-.navbar a{
-	color: teal;
-	font-size: 15px;
-}
-
 .item a {
 	color: teal;
 }
 
+/*	---------------------------------------*/
+/*					NAV BAR 			   */
+/*	---------------------------------------*/
+.navbar{
+	width: 100%;
+	padding: 1em 4em 1em 4em;
+	border-bottom-right-radius: 80px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: rgba(57, 95, 95, 0.096);
+}
+
 .navbar .logo{
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
+	color: teal;
+	margin-left: 2em;
+	
 }
 
 .navbar .nav-links ul{
 	display: flex;
 }
-
 .navbar .nav-links ul li{
 	margin: 10px  ;
 }
 .navbar .nav-links ul li a{
 	font-size: 1.5em;
+	position: relative;
 }
-
 .navbar .nav-links ul li.active a{
 	font-weight: bolder;
 }
+
+
+.navbar .nav-links ul li a::before {
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: teal;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transition: .5s;
+}
+.navbar .nav-links ul li:hover a::before {
+	width: 100%;
+}
+.navbar .nav-links ul li:hover{
+	transform: translateY(-5px);
+}
+/*	---------------------------------------*/
+
+
+
 
 #header{
 	text-align: center;
@@ -219,8 +252,8 @@ ul.list li{
 	color: lightblue;
 }
 
-#footer,
-.footer{
+#footer
+{
 	font-size: 1,2em;
 	text-align: right;
 	color: lightgray;
@@ -297,8 +330,48 @@ ul.list li{
 	justify-content: center;
 }
 
+/*	---------------------------------------*/
+/*	PETIT-PAKI -> GESTION BOUTON SCROLL UP */
+/*	---------------------------------------*/
+#btn-up{
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 2em;
+	bottom: 10em;
+	transition:all 1s;
+}
+
+.hide{
+	background:transparent;
+	transition: 0.4s;
+}
+.show{
+	background:rgba(0, 128, 128, 0.427);
+	transform: rotate(360deg);
+}
+
+/*	---------------------------------------*/
 
 
+
+/*	---------------------------------------*/
+/*	PETIT-PAKI -> GESTION BOUTON SCROLL UP */
+/*	---------------------------------------*/
+.arrow{
+	color: white;
+	font-size: 2em;
+}
+.up{
+	border: none;
+	background:transparent;
+	cursor: pointer;
+}
+/*	---------------------------------------*/
 
  
  
