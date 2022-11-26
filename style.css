@@ -67,7 +67,6 @@ a{
 
 .navbar{
 	padding: 50px;
-	font-family: 'Barlow', sans-serif;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -99,8 +98,10 @@ a{
 }
 
 .navbar .nav-links ul li{
-	font-family: 'Barlow', sans-serif;
 	margin: 10px  ;
+}
+.navbar .nav-links ul li a{
+	font-size: 1.5em;
 }
 
 .navbar .nav-links ul li.active a{
@@ -218,8 +219,9 @@ ul.list li{
 	color: lightblue;
 }
 
+#footer,
 .footer{
-	font-size: 10px;
+	font-size: 1,2em;
 	text-align: right;
 	color: lightgray;
 	padding: 25px;
@@ -235,6 +237,11 @@ ul.list li{
 	flex: 2;
 }
 
+.item ul li{
+	flex: 2;
+	font-size: 1.8em ;
+}
+
 .timer{
 	margin-top: 23px;
 	margin-left: 100px;
@@ -246,30 +253,14 @@ ul.list li{
 #typing-3,
 #typing-4 {
 	font-family: 'Cedarville Cursive';
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
-
-
-
-
-.paki_invisible{
-	color: white;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.paki_visible{
-	color: teal;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.photo{
-	max-width: 95%;
+.photo .img{
+	max-width: 100%;
 	height: auto;
+	display: flex;
+	margin: auto;
  	border-radius: 20px;
   	padding: 5px;
 	filter: sepia(40%);
@@ -279,18 +270,13 @@ ul.list li{
 
 .visible {
 	cursor: pointer;
-	font-size: 1.2em;
-	text-align: center;
+	font-size: 1.5em;
 	border-color: teal;
 	border-radius: 10px;
 	background-image: linear-gradient(to right, rgb(21, 177, 177) 0%, #48a59a  51%, #2fcdba  100%);
 	color: white;            
 	box-shadow: 0 0 5px rgb(103, 99, 99);
 	border-radius: 10px;
-	margin: 15px auto;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 2px 10px;
 }
 
 .invisible {
@@ -299,7 +285,16 @@ ul.list li{
 	color: white;
 	display: flex;
 	margin: 15px auto;
-	transition: all 0.8s;
+	transition: all 1s;
+}
+
+.but{
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
