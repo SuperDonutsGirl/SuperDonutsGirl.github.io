@@ -7,9 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a6ba4900c1.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="../js/up.js"></script>
 </head>
 
-<body>
+<body onscroll="javascript: main();" id="body">
+
+	<div id="btn-up" class="hide">
+		<button onclick="scrollUp()" class="up"><i class="fa-solid fa-arrow-up arrow"></i></button>
+	</div>
+
 	<nav class="navbar">
 		<a href="../index.html" class="logo fa-solid fa-book" ></a>
 		<div class="nav-links">
@@ -28,32 +35,8 @@
 	</div>
 
 	<div id="attributs">
-        <div>
-            <div class="links">
-                <ul class="list">
-					<li> <a href="entrees.html">Les entrées</a></li>
-                    <li> <a href="plats.html">Les plats</a></li>
-                    <li> <a href="desserts.html">Les desserts</a></li>
-                </ul>
-            </div>
-			<div class="links">
-                <ul class="list">
-                    <li> <a href="viande.html">Les viandes</a></li>
-                    <li> <a href="vege.html">Les plats végés</a></li>
-                    <li> <a href="poisson.html">Les poissons</a></li>
-                </ul>
-            </div>
-			<div class="links">
-                <ul class="list">
-                    <li> <a href="sauces.html">Les sauces</a></li>
-                    <li> <a href="boissons.html">Les boissons</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="barre"></div>
         <div class="container">
-            <div class="item">
+            <div  >
                 <ul>
                     <li><a href="../recettes/recette_1.html">Sauté de veau</a></li>
                     <div class="barre_liste"></div>

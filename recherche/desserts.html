@@ -6,9 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a6ba4900c1.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="../js/up.js"></script>
 </head>
 
-<body>
+<body onscroll="javascript: main();" id="body">
+
+	<div id="btn-up" class="hide">
+		<button onclick="scrollUp()" class="up"><i class="fa-solid fa-arrow-up arrow"></i></button>
+	</div>
+
 	<nav class="navbar">
 		<a href="../index.html" class="logo fa-solid fa-book" ></a>
 		<div class="nav-links">
@@ -27,16 +34,8 @@
 	</div>
 
 	<div id="attributs">
-        <div>
-            <div class="links">
-                <ul class="list">
-                    <li> <a>Tous les desserts</a></li>
-                </ul>
-                </div>
-        </div>
-        <div class="barre"></div>
         <div class="container">
-            <div class="item">
+            <div  >
                 <ul>
                     <li><a href="../recettes/recette_61.html">Clafoutis aux cerises</a></li>
                     <div class="barre_liste"></div>

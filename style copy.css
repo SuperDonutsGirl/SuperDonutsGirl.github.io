@@ -1,5 +1,6 @@
+
 /*	---------------------------------------*/
-/*		     CSS BALISES & RESET 		   */
+/*		     CSS TITRES & RESET 		   */
 /*	---------------------------------------*/
 *{
 	font-family: 'Barlow', sans-serif;
@@ -9,22 +10,6 @@
 
 body{
 	margin: 0;
-}
-
-p{
-	text-align: left;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin-top: 0px;
-}
-
-a{
-	text-decoration: none;
-	color: teal;
-}
-
-#header p{
-	text-align: center;
 }
 
 h1{
@@ -73,8 +58,6 @@ h6{
 	margin-bottom: 10px;
 }
 /*	---------------------------------------*/
-
-
 
 
 /*	---------------------------------------*/
@@ -133,65 +116,6 @@ h6{
 /*	---------------------------------------*/
 
 
-
-/*	---------------------------------------*/
-/*				PRESENTATION			   */
-/*	---------------------------------------*/
-#typing,
-#typing-2,
-#typing-3,
-#typing-4 {
-	font-family: 'Cedarville Cursive';
-	font-size: 1.5em;
-}
-
-.photo .img{
-	max-width: 100%;
-	height: auto;
-	display: flex;
-	margin: auto;
- 	border-radius: 20px;
-  	padding: 5px;
-	filter: sepia(40%);
-	border : 5px solid teal;
-	box-shadow:10px 10px 10px 0 rgba(0, 128, 128, 0.323);
-}
-
-.visible {
-	border: none;
-	cursor: pointer;
-	border-radius: 50px;
-	display: flex;
-	margin-top: 1em;
-	padding: 2em;
-	background:rgba(0, 128, 128, 0.427);
-	
-}
-
-.invisible {
-	border: none;
-	background-color:white;
-	color: white;
-	display: flex;
-	margin: 15px auto;
-	transition: all 0.5s;
-}
-
-.lecture{
-	align-items: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.fa-arrow-down{
-	color: white;
-	font-size: 2em;
-}
-/*	---------------------------------------*/
-
-
-
 /*	---------------------------------------*/
 /*		       LISTES RECHERCHE    		   */
 /*	---------------------------------------*/
@@ -216,51 +140,30 @@ h6{
 /*	---------------------------------------*/
 
 
+/*indefini*/
 
-
-/*	---------------------------------------*/
-/*			GESTION SCROLL UP			   */
-/*	---------------------------------------*/
-#btn-up{
-	height: 2.5em;
-	width: 2.5em;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	right: 2em;
-	bottom: 10em;
-	transition:all 1s;
+p{
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 0px;
 }
 
-.hide{
-	background:transparent;
-	transition: 0.4s;
+a{
+	text-decoration: none;
+	color: teal;
 }
-.show{
-	background:rgba(0, 128, 128, 0.427);
-	transform: rotate(360deg);
+.p_center{
+	text-align: center;
 }
 
-.arrow{
-	color: white;
-	font-size: 2em;
-}
-.up{
-	border: none;
-	background:transparent;
+#suggestions{
 	cursor: pointer;
 }
-/*	---------------------------------------*/
 
-
-
-
-
-
-
-
+.item a {
+	color: teal;
+}
 
 
 
@@ -278,7 +181,6 @@ h6{
 	text-align: left;
 	font-size: 20px;
 	padding-left: 15px;
-	cursor: pointer;
 }
 
 #bouton{
@@ -367,6 +269,14 @@ ul.list li{
 	text-align: left;
 }
 
+.item{
+	flex: 2;
+}
+
+.item ul li{
+	flex: 2;
+	font-size: 1.8em ;
+}
 
 .timer{
 	margin-top: 23px;
@@ -374,8 +284,97 @@ ul.list li{
 	font-size: 30px;
 }
 
+#typing,
+#typing-2,
+#typing-3,
+#typing-4 {
+	font-family: 'Cedarville Cursive';
+	font-size: 1.5em;
+}
+
+.photo .img{
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	margin: auto;
+ 	border-radius: 20px;
+  	padding: 5px;
+	filter: sepia(40%);
+	border : 5px solid teal;
+	box-shadow:10px 10px 10px 0 rgba(0, 128, 128, 0.323);
+}
+
+.visible {
+	cursor: pointer;
+	font-size: 1.5em;
+	border-color: teal;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, rgb(21, 177, 177) 0%, #48a59a  51%, #2fcdba  100%);
+	color: white;            
+	box-shadow: 0 0 5px rgb(103, 99, 99);
+	border-radius: 10px;
+}
+
+.invisible {
+	border: none;
+	background-color:white;
+	color: white;
+	display: flex;
+	margin: 15px auto;
+	transition: all 1s;
+}
+
+.but{
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*	---------------------------------------*/
+/*	PETIT-PAKI -> GESTION BOUTON SCROLL UP */
+/*	---------------------------------------*/
+#btn-up{
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 2em;
+	bottom: 10em;
+	transition:all 1s;
+}
+
+.hide{
+	background:transparent;
+	transition: 0.4s;
+}
+.show{
+	background:rgba(0, 128, 128, 0.427);
+	transform: rotate(360deg);
+}
+
+/*	---------------------------------------*/
 
 
+
+/*	---------------------------------------*/
+/*	PETIT-PAKI -> GESTION BOUTON SCROLL UP */
+/*	---------------------------------------*/
+.arrow{
+	color: white;
+	font-size: 2em;
+}
+.up{
+	border: none;
+	background:transparent;
+	cursor: pointer;
+}
+/*	---------------------------------------*/
 
  
  

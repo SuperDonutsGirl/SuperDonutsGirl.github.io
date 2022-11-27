@@ -23,9 +23,9 @@ function typeWriter1() {
 	else {
 		bouton.remove();
 		let div_but = document.createElement("div");
-		div_but.classList.add("but");
+		div_but.classList.add("lecture");
 		document.body.insertBefore(div_but, footer);
-		div_but.innerHTML += `<button onclick="typeWriter2()" class="visible" id="b2">Suite</button>`
+		div_but.innerHTML += `<button onclick="typeWriter2()" class="visible" id="b2"><i class="fa-solid fa-arrow-down"></i></button>`
 		let typing_2 = document.createElement("p");
 		typing_2.setAttribute("id","typing-2");
 		document.body.insertBefore(typing_2, footer);
@@ -46,9 +46,9 @@ function typeWriter2() {
 	else {
     	bouton.remove();
     	let div_but = document.createElement("div");
-    	div_but.classList.add("but");
+    	div_but.classList.add("lecture");
     	document.body.insertBefore(div_but, footer);
-    	div_but.innerHTML += `<button onclick="typeWriter3()" class="visible" id="b3">Suite</button>`
+    	div_but.innerHTML += `<button onclick="typeWriter3()" class="visible" id="b3"><i class="fa-solid fa-arrow-down"></i></button>`
     	let typing_3 = document.createElement("p");
     	typing_3.setAttribute("id","typing-3");
     	document.body.insertBefore(typing_3, footer);
@@ -69,9 +69,9 @@ function typeWriter3() {
     else {
     	bouton.remove();
     	let div_but = document.createElement("div");
-    	div_but.classList.add("but");
+    	div_but.classList.add("lecture");
     	document.body.insertBefore(div_but, footer);
-    	div_but.innerHTML += `<button onclick="typeWriter4()" class="visible" id="b4">Suite</button>`
+    	div_but.innerHTML += `<button onclick="typeWriter4()" class="visible" id="b4"><i class="fa-solid fa-arrow-down"></i></button>`
     	let typing_4 = document.createElement("p");
     	typing_4.setAttribute("id","typing-4");
     	document.body.insertBefore(typing_4, footer);
