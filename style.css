@@ -23,16 +23,26 @@ a{
 	color: teal;
 }
 
+#header{
+	text-align: center;
+	padding: 25px 0 50px 0;
+}
+
 #header p{
 	text-align: center;
 }
 
 h1{
+	width: 100%;
+	margin: 0;
+	padding-bottom: 2em;
 	color: teal ;
 	text-align: center;
-	font-size: 100px;
-	margin: 1em;
+	font-size: 5em;
+	/*background-image: url("./svg/plan-travail.jpg");*/
 }
+
+
 
 h2{
 	color: teal ;
@@ -82,14 +92,13 @@ h6{
 /*	---------------------------------------*/
 .navbar{
 	width: 100%;
-	padding: 1em 4em 1em 4em;
-	border-bottom-right-radius: 80px 80px;
+	height: 2em;
+	padding: 4em 4em 3em 4em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	box-sizing: border-box;
-	background-color: rgba(57, 95, 95, 0.096);
+	
 }
 
 .navbar .logo{
@@ -134,6 +143,25 @@ h6{
 
 
 
+
+
+/*	---------------------------------------*/
+/*				TITRE PRESENTATION		   */
+/*	---------------------------------------*/
+.book{
+	width:100%;
+	height: 400px;
+	background-image: url("./svg/book.svg");
+	background-size: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 2em;
+}
+.book .text{
+	width: 50%;
+	padding-left: 25%;
+	padding-top: 15%;
+}
 /*	---------------------------------------*/
 /*				PRESENTATION			   */
 /*	---------------------------------------*/
@@ -178,7 +206,6 @@ h6{
 }
 
 .lecture{
-	align-items: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -258,68 +285,9 @@ h6{
 
 
 
-
-
-
-
-
-
-
-
-
-#header{
-	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 50px;
-}
-
-#suggestions{
-	list-style-type: none;
-	text-align: left;
-	font-size: 20px;
-	padding-left: 15px;
-	cursor: pointer;
-}
-
-#bouton{
-	border: none;
-	color: teal;
-}
-
-#bouton::before{
-	padding: 100% 60%;
-	border-radius: 10%;
-	transition: 0.3s;
-}
-
-#bouton:hover:before{
-	background-color: #cec8c87a;
-}
-
-.bordureSearch{
-	width: 250px;
-	padding-top: 20px;
-	border-radius: 10px;
-	display: inline-block;
-	font-size: 20px;
-	color: teal;
-	background: rgba(88, 99, 109, 0.1);
-}
-
-.bordureNone{
-	border: none;
-	width: 200px;
-	background: rgba(88, 99, 109, 0.0);
-	color: teal;
-	font-size: 20px;
-}
-
-ul.list li{
-  display: inline-block;
-  padding-right: 30px;
-}
-
-/*recettes*/
+/*	---------------------------------------*/
+/*		     	  RECETTES		  		   */
+/*	---------------------------------------*/
 .barre{
 	height: 1px;
 	width: 85%;
@@ -334,50 +302,212 @@ ul.list li{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-/**/
+.ingredient{
+	flex: 2;
+	font-size: 1.8em;
+}
+
+.ingredient i{
+	margin: 30%;
+	padding-left: 25%;
+	font-size: 1.5em;
+}
+.time{
+	margin-top: 20%;
+	padding-left: 5%;
+	align-content: center;
+	flex: auto;
+}
+/*	---------------------------------------*/
 
 
 
+
+
+/*	---------------------------------------*/
+/*		     	 GLOBAL    				   */
+/*	---------------------------------------*/
+ul.list li{
+	display: inline-block;
+	padding-right: 30px;
+}
+.container{
+	display: flex;
+	text-align: left;
+}
+/*	---------------------------------------*/
+
+
+
+
+/*	---------------------------------------*/
+/*		 	 PAGES PRINCIPALES    		   */
+/*	---------------------------------------*/
 #type{
 	text-align: center;
 	padding-bottom: 25px;
 }
-
 #type a{
 	color: teal;
 	text-align: center;
 	font-size: 15px;
 }
-
 #type a:hover{
 	color: lightblue;
 }
+/*	---------------------------------------*/
 
+
+
+/*	---------------------------------------*/
+/*		     BAR DE RECHERCHE   		   */
+/*	---------------------------------------*/
+.bordureSearch{
+	width: 29em;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 20px;
+	color: teal;
+	background: rgba(88, 99, 109, 0.1);
+}
+
+.search{
+	display:flex;
+	justify-content: left;
+}
+.searchBar{
+	border: none;
+	width: 23em;
+	height: 1.5em;
+	background: rgba(88, 99, 109, 0.0);
+	color: teal;
+	font-size: 20px;
+}
+#bouton{
+	border: none;
+	height: 1.5em;
+	color: #008080;
+	font-size: 1em;
+}
+#bouton::before{
+	height: inherit;
+    padding-top: 1.1em;
+    padding-bottom: 1.5em;
+    padding-right: 2em;
+    margin-right: -1em;
+    padding-left: 1em;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: 0.3s;
+}
+#bouton:hover:before{
+	background-color: #cec8c87a;
+}
+
+#suggestions{
+	list-style-type: none;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+/*	---------------------------------------*/
+
+
+
+
+
+/*	---------------------------------------*/
+/*		     	 FOOTER    				   */
+/*	---------------------------------------*/
 #footer
 {
-	font-size: 1,2em;
+	font-size: 1em;
 	text-align: right;
 	color: lightgray;
 	padding: 25px;
 }
+/*	---------------------------------------*/
 
-.container{
+/*	---------------------------------------*/
+/*		     	 PAGE RECHERCHE  		   */
+/*	---------------------------------------*/
+.cards-list {
+	z-index: 0;
+	width: 100%;
 	display: flex;
+	justify-content: space-around;
 	flex-wrap: wrap;
-	text-align: left;
+}
+.box-2{
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.card {
+	margin: 30px auto;
+	width: 200px;
+	height: 250px;
+	border-radius: 40px;
+  	box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+	cursor: pointer;
+	transition: 0.4s;
+}
+.card:hover {
+	transform: scale(0.9, 0.9);
+	box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+	  -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+
+.card_title {
+	text-align:end;
+	font-size: 1.5em;
+	margin-top: 0.8em;
+	color: teal;
+}
+.card_image img{
+	width: 45%;
+    opacity: 50%;
+}
+.img-arrow img{
+	width: 20%;
+    margin-top: 1.5em;
+    margin-left: 8em;
+    transform: rotate(45deg);
+	opacity: 30%;
+} 
+@media all and (max-width: 500px) {
+	.card-list {
+	  /* On small screens, we are no longer using row direction but column */
+	  flex-direction: column;
+	}
 }
 
-
-.timer{
-	margin-top: 23px;
-	margin-left: 100px;
-	font-size: 30px;
+.baner{
+	width: 100%;
+	align-items: center;
+	margin-bottom: 3em;
+	background-color: rgba(0, 128, 128, 0.133);
 }
+.bloc{
+	padding-top: 3em;
+}
+.bloc .sec{
+	font-size: 2.5em;
+}
+/*	---------------------------------------*/
 
 
 
 
- 
- 
 
- 
+
+
+
+
+

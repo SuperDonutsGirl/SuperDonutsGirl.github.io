@@ -9,10 +9,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a6ba4900c1.js" crossorigin="anonymous"></script>
 	<script src="js/data.js"></script>
+	<script type="text/javascript" src="./js/random.js"></script>
+
 </head>
 
 <body>
-
+	
 	<nav class="navbar">
 		<a href="index.html" class="logo fa-solid fa-book" ></a>
 		<div class="nav-links">
@@ -23,61 +25,215 @@
 				<li> <a href="petit_paki.html">Petit Paki</a></li>
 			</ul>
 		</div>
+		
 	</nav>
 
 
 
-	<div>
-		<h1>Les recettes de Mamie Mado</h1>
+	<div class="book">
+		<div class="text">
+			<h1>Les recettes de Mamie</h1>
+		</div>
 	</div>
 
-	<div id="header" >
-		<p>Une recette bien précise ?</p>
-		<div class="bordureSearch">
-			<input class="bordureNone" type="search" id="input" placeholder="Rechercher"/>
-			<button id="bouton" ></button>
+	
+
+
+
+	<div id="header" class="baner">
+		<div class="bloc">
+			<p class="sec">Chercher une recette</p>
+			<div class="bordureSearch">
+			<ul class="search">
+				<li><input class="searchBar" type="search" id="input" placeholder="Rechercher"/></li>
+				<li id="loupe"></li>
+			</ul>
 			<ul id="suggestions"></ul>
   			<script type="text/javascript" src="./js/autoComplete.js"></script>
   			</div>
 		</div>
-	</div>
 
-	
 
-	<div id="header">
-		<p>Aucune inspiration ?</p>
-		<div id="type">
-			<ul class="list" id="aleatoir">
-				<li><a href="./recherche/total.html" class="fa-solid fa-book"> Toutes les recettes</a></li>
-			</ul>
-			<script type="text/javascript" src="./js/random.js"></script>
-
+		<div class="bloc">
+			<div class="box-2">
+				<a href="./recherche/total.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<img src="./svg/carnet.svg">
+						</div>
+						<div class="card_title">
+							<p>Toutes les<br>recettes</p>
+						</div>
+					</div>
+				</a>
+				<a id="aleatoire">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/hasard.svg">
+						</div>
+						<div class="card_title">
+							<p>Recette<br>aléatoire</p>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
-	</div>
-	
-	<div id="header">
-		<p>Besoin d'une inspiration thématique ?</p>
-		<div id="type">
-			<ul class="list">
-				<li><a href="./recherche/entrees.html" class="fa-solid fa-utensils"> Entrees</a></li>
-				<li><a href="./recherche/plats.html" class="fa-solid fa-utensils"> Plats</a></li>
-				<li><a href="./recherche/desserts.html" class="fa-solid fa-utensils"> Desserts</a></li>
-				<li><a href="./recherche/boissons.html" class="fa-solid fa-wine-glass-empty"> Boissons</a></li>
-			</ul>
-			<ul class="list">
-				<li><a href="./recherche/sauces.html" class="fa-solid fa-mug-saucer"> Sauces</a></li>
-				<li><a href="./recherche/vege.html "class="fa-solid fa-seedling"> Vege</a></li>
-				<li><a href="./recherche/poisson.html "class="fa-solid fa-fish"> Poisson</a></li>
-				<li><a href="./recherche/viande.html"class="fa-solid fa-drumstick-bite"> Viande</a></li>
-			</ul>
-	</div>
-	</div>
 
+		<div class="bloc">
+			<p class="sec">Inspiration thématique</p>
+			<div class="cards-list">
+				<a href="./recherche/vege.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<img src="./svg/vege.svg">
+						</div>
+						<div class="card_title">
+							<p>Végés</p>
+						</div>
+					</div>
+				</a>
+	
+				<a href="./recherche/viande.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/viande.svg">
+						</div>
+						<div class="card_title">
+							<p>Viandes</p>
+						</div>
+					</div>
+				</a>
+	
+				<a href="./recherche/poisson.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/poisson.svg">
+						</div>
+						<div class="card_title">
+							<p>Poissons</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="cards-list">
+				<a href="./recherche/entrees.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/entree.svg">
+						</div>
+						<div class="card_title">
+							<p>Entrées</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="./recherche/plats.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/plat.svg">
+						</div>
+						<div class="card_title">
+							<p>Plats</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="./recherche/desserts.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/dessert.svg">
+						</div>
+						<div class="card_title">
+							<p>Desserts</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="cards-list">
+				<a href="./recherche/sauces.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/sauce.svg">
+						</div>
+						<div class="card_title">
+							<p>Sauces</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="./recherche/boissons.html">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/boisson.svg">
+						</div>
+						<div class="card_title">
+							<p>Boissons</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="">
+					<div class="card">
+						<div class="img-arrow">
+							<img src="./svg/up-arrow.svg">
+						</div>
+						<div class="card_image">
+							<script type="text/javascript" src="./js/random.js"></script>
+							<img src="./svg/astuce.svg">
+						</div>
+						<div class="card_title">
+							<p>Astuce ménagères</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
 
 	<div >
 		<p id="footer">Fait avec <i class="fa-solid fa-heart fa-beat-fade"></i> <br> par Pamartin</p>
 	</div>
-
 </body>
+
 
 </html>

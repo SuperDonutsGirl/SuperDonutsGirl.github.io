@@ -4,7 +4,8 @@
   let ulField = document.getElementById('suggestions');
   inputField.addEventListener('input', changeAutoComplete);
   ulField.addEventListener('click', selectItem);
-  let bouton = document.getElementById('bouton');
+  let bouton = document.getElementById('loupe');
+
 
   
 
@@ -12,6 +13,9 @@
 
   function changeAutoComplete({ target }) {
     let data = target.value;
+    let loupe = document.getElementById('bouton');
+    if (loupe && !data)
+      loupe.remove();
     ulField.innerHTML = ``;
     if (data.length) {
       let autoCompleteValues = autoComplete(data);
@@ -31,11 +35,14 @@
   }
 
   function selectItem({ target }) {
+ 
     if (target.tagName === 'LI') {
       inputField.value = target.textContent;
       ulField.innerHTML = ``;
       let index = destination.indexOf(inputField.value) + 1;
-      bouton.innerHTML = bouton.innerHTML + `<a class="fa-solid fa-magnifying-glass" id="bouton" href="recettes/recette_${index}.html" ></a>`
+      bouton.innerHTML += `<a class="fa-solid fa-magnifying-glass" id="bouton" href="recettes/recette_${index}.html" ></a>`
     }
   }
 })();
+
+

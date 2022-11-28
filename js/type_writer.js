@@ -6,7 +6,7 @@ var	txt_1 = "Cette retranscription de mon carnet de recette vous permetra à vou
 var	txt_2 = "J'ai commencé ce carnet il y a déjà bien longtemps, vous y retrouver plusieurs genre de recettes, allant de la cuisine aux astuces ménagères."
 var	txt_3 = "Tout n'y est pas détaillé à la perfection, c'est une sorte de bible de la 'bonne ménagère'."
 var	txt_4 = "Pour éviter que Papy soit jaloux, le Petit Paki à été glissé "
-var	speed = 0;
+var	speed = 50;
 
 
 function typeWriter1() {
