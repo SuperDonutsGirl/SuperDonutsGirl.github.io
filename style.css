@@ -162,15 +162,45 @@ h6{
 	padding-left: 25%;
 	padding-top: 15%;
 }
+
+.flower{
+	width:100%;
+	height: 400px;
+	background-image: url("./svg/book.svg");
+	background-size: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 2em;
+}
+.flower .text{
+	width: 80%;
+	padding-left: 10%;
+	padding-top: 8em;
+}
+
+.recettes{
+	width:100%;
+	height: 400px;
+	background-image: url("./svg/book.svg");
+	background-size: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 2em;
+}
+.recettes .text{
+	width: 80%;
+	padding-left: 10%;
+	padding-top: 13em;
+}
 /*	---------------------------------------*/
 /*				PRESENTATION			   */
 /*	---------------------------------------*/
-#typing,
 #typing-2,
 #typing-3,
-#typing-4 {
+#typing-4,
+#typing {
 	font-family: 'Cedarville Cursive';
-	font-size: 1.5em;
+	font-size: 50px;
 }
 
 .photo .img{
@@ -226,12 +256,12 @@ h6{
 #attributs{
 	color: teal;
 	text-align: center;
-	border-radius: 10px;
-	background: rgba(88, 99, 109, 0.1);
-	margin-bottom: 10px;
-	margin-right: 6em;
-	margin-left: 6em;
+	border-radius: 30px;
+	background: rgba(0, 128, 128, 0.133);
+	margin-bottom: 8em;
 	padding-bottom: 8px;
+	position: relative;
+	margin-top: 5em;
 }
 .barre_liste{
 	height: 1px;
@@ -240,6 +270,17 @@ h6{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+.item-liste{
+	font-size: 2em;
+}
+
+ul li a.item-liste:hover{
+	font-weight: bold;
+	font-style: italic;
+}
+
+
 /*	---------------------------------------*/
 
 
@@ -317,6 +358,40 @@ h6{
 	padding-left: 5%;
 	align-content: center;
 	flex: auto;
+}
+.ingredient .time-repos{
+	margin-top: 20%;
+	align-content: center;
+	flex: auto;
+}
+
+.top{
+	width: 40%;
+	background: linear-gradient(rgba(0, 128, 128, 0.435), rgba(0, 128, 128, 0.133));
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-bottom: 0.2em;
+	padding-top: 0.2em;
+	top: -1.6em;
+	position: absolute;
+	transform: translateX(75%);
+	z-index: -0.5;
+	color: teal ;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.top h5{
+	align-content: center;
+	justify-content: center;
+}
+ul.espace{
+	padding-top: 1em;
+}
+
+details{
+	cursor: pointer;
 }
 /*	---------------------------------------*/
 
@@ -410,7 +485,6 @@ ul.list li{
 	list-style-type: none;
 	text-align: left;
 	font-size: 20px;
-	padding-left: 15px;
 	cursor: pointer;
 }
 /*	---------------------------------------*/
@@ -447,7 +521,16 @@ ul.list li{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	
+	
 }
+.card-1{
+	padding-left: 50px;
+}
+.card-2{
+	padding-right: 50px;
+}
+
 .card {
 	margin: 30px auto;
 	width: 200px;

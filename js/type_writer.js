@@ -21,19 +21,19 @@ function typeWriter1() {
 		setTimeout(typeWriter1, speed);
 	}
 	else {
-		bouton.remove();
+		//bouton.remove();
 		let div_but = document.createElement("div");
 		div_but.classList.add("lecture");
 		document.body.insertBefore(div_but, footer);
 		div_but.innerHTML += `<button onclick="typeWriter2()" class="visible" id="b2"><i class="fa-solid fa-arrow-down"></i></button>`
 		let typing_2 = document.createElement("p");
-		typing_2.setAttribute("id","typing");
+		typing_2.setAttribute("id","typing-2");
 		document.body.insertBefore(typing_2, footer);
 	}
 }
 
 function typeWriter2() {
-	let	typing_text = document.getElementById("typing");
+	let	typing_text = document.getElementById("typing-2");
 	let	bouton = document.getElementById("b2");
 	let	footer = document.getElementById("footer");
 	bouton.classList.remove("visible");
@@ -50,13 +50,13 @@ function typeWriter2() {
     	document.body.insertBefore(div_but, footer);
     	div_but.innerHTML += `<button onclick="typeWriter3()" class="visible" id="b3"><i class="fa-solid fa-arrow-down"></i></button>`
     	let typing_3 = document.createElement("p");
-    	typing_3.setAttribute("id","typing");
+    	typing_3.setAttribute("id","typing-3");
     	document.body.insertBefore(typing_3, footer);
   }
 }
 
 function typeWriter3() {
-	let	typing_text = document.getElementById("typing");
+	let	typing_text = document.getElementById("typing-3");
 	let bouton = document.getElementById("b3");
 	let footer = document.getElementById("footer");
 	bouton.classList.remove("visible");
@@ -73,13 +73,13 @@ function typeWriter3() {
     	document.body.insertBefore(div_but, footer);
     	div_but.innerHTML += `<button onclick="typeWriter4()" class="visible" id="b4"><i class="fa-solid fa-arrow-down"></i></button>`
     	let typing_4 = document.createElement("p");
-    	typing_4.setAttribute("id","typing");
+    	typing_4.setAttribute("id","typing-4");
     	document.body.insertBefore(typing_4, footer);
     }
 }
 
 function typeWriter4() {
-	let	typing_text = document.getElementById("typing");
+	let	typing_text = document.getElementById("typing-4");
 	let bouton = document.getElementById("b4");
 	let footer = document.getElementById("footer");
 	bouton.classList.remove("visible");
