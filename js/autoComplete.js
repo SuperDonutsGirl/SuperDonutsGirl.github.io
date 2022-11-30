@@ -8,9 +8,6 @@
 
 
   
-
-  
-
   function changeAutoComplete({ target }) {
     let data = target.value;
     let loupe = document.getElementById('bouton');

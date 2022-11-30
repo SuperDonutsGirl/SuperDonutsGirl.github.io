@@ -253,16 +253,6 @@ h6{
 /*		       LISTES RECHERCHE    		   */
 /*	---------------------------------------*/
 	/*background des listes de recettes*/
-#attributs{
-	color: teal;
-	text-align: center;
-	border-radius: 30px;
-	background: rgba(0, 128, 128, 0.133);
-	margin-bottom: 8em;
-	padding-bottom: 8px;
-	position: relative;
-	margin-top: 5em;
-}
 .barre_liste{
 	height: 1px;
 	width: 92%;
@@ -368,31 +358,53 @@ ul li a.item-liste:hover{
 .top{
 	width: 40%;
 	background: linear-gradient(rgba(0, 128, 128, 0.435), rgba(0, 128, 128, 0.133));
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	padding-bottom: 0.2em;
-	padding-top: 0.2em;
-	top: -1.6em;
-	position: absolute;
+
+	position: relative;
+	bottom: 57.5px;
 	transform: translateX(75%);
-	z-index: -0.5;
 	color: teal ;
 	text-align: center;
 	font-size: 3em;
 	font-weight: bold;
 }
 
+details[open] summary .top{
+	border-radius: 15px 15px 0 0;
+}
+
+details summary .top{
+	border-radius: 15px;
+}
+
 .top h5{
 	align-content: center;
 	justify-content: center;
 }
-ul.espace{
-	padding-top: 1em;
+details[open] summary{
+	height: 0;
 }
 
 details{
 	cursor: pointer;
 }
+
+#attributs details[open]{
+	color: teal;
+	text-align: center;
+	border-radius: 30px;
+	background: rgba(0, 128, 128, 0.133);
+	margin-bottom: 8em;
+	margin-top: 5em;
+}
+#attributs details{
+	width: 100%;
+	background-color: none;
+	margin-bottom: 20px;
+	padding-bottom: 8px;
+	margin-top: 20px;
+}
+
+
 /*	---------------------------------------*/
 
 
@@ -452,6 +464,7 @@ ul.list li{
 }
 .searchBar{
 	border: none;
+	outline:  none;
 	width: 23em;
 	height: 1.5em;
 	background: rgba(88, 99, 109, 0.0);
